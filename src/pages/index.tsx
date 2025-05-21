@@ -18,7 +18,7 @@ export default function Home() {
       .then((data) => setPosts(data));
   }, []);
 
-  const handleAddPost = (newPost: any) => {
+  const handleAddPost = (newPost: Post) => {
     setPosts([newPost, ...posts]);
   };
 
